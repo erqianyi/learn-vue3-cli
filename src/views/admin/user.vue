@@ -2,8 +2,7 @@
 </script>
 
 <template>
-  <div>Layout</div>
-  <router-view />
+  User page
 </template>
 
 <style lang="scss" scoped>

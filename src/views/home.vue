@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  HelloWorld！
+  HelloWorld！Home Page
 </template>
 
 <style lang="scss" scoped>
