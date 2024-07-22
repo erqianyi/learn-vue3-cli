@@ -1,11 +1,22 @@
-import axios, { AxiosRequestConfig } from 'axios';
-class Axios {
-  private instance: any;
+import axios, { AxiosRequestConfig, AxiosInstance } from 'axios';
+export default class Axios {
+  private instance: AxiosInstance;
 
   constructor(config: AxiosRequestConfig) {
     this.instance = axios.create(config)
 
     this.interceptors()
+  }
+
+  public async request<T, R = ResponseResult<T>>(config: AxiosRequestConfig): Promise<R> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const response = await this.instance.request<R>(config)
+        resolve(response.data)
+      } catch (error) {
+        reject(error)
+      }
+    })
   }
 
   private interceptors() {

@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.17.5",
+    "@types/mockjs": "^1.0.10",
     "@types/node": "^20.12.11",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
