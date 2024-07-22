@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { env } from '@/types/helper';
+import { env } from '@/utils/helper';
 
 console.log(env)
 </script>
