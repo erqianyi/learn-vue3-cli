@@ -1,9 +1,8 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
-  <div class="bg-slate-300 h-screen">登录</div>
+  <router-view />
 </template>
 
 <style lang="scss" scoped>
